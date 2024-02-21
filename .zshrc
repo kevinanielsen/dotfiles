@@ -1,4 +1,5 @@
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 source /Users/kevinanielsen/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 
 # Load completion config
@@ -44,8 +45,6 @@ fcd() {
   local dir
   dir=$(find ${1:-.} -type d -not -path '*/\.*' 2> /dev/null | fzf +m) && cd "$dir"
 }
-
-source /usr/local/etc/profile.d/z.sh
 
 # Load deno
 export DENO_INSTALL="/Users/kevinanielsen/.deno"
