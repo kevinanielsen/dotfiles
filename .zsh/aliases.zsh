@@ -23,3 +23,4 @@ alias spotlighton="sudo mdutil -i on"
 alias spotlightoff="sudo mdutil -i off"
 
 alias k="kubectl"
+alias sb="supabase"
