@@ -1,0 +1,12 @@
+[font]
+size = 16
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 8
+y = 2
