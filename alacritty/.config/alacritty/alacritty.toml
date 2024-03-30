@@ -1,3 +1,5 @@
+import = ["/Users/kevinanielsen/.config/alacritty/themes/catpuccin-mocha.toml"]
+
 [font]
 size = 16
 
