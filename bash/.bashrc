@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -53,3 +55,6 @@ alias g="git"
 alias gp="git pull"
 alias gs="git status"
 alias lg="lazygit"
+
+# supabase
+alias sb="supabase"
