@@ -1,3 +1,5 @@
+bash
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source /Users/kevinanielsen/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
