@@ -23,5 +23,3 @@ bindings = [
   { key = "Back",     mods = "Alt",     chars = "\u0011b\u007f"                    }, # Delete word
 ]
 
-[shell]
-program = "/bin/zsh/"
