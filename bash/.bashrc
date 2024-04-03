@@ -16,6 +16,9 @@ bind -x '"\C-l":clear'
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
+# enable bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # ~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~~~~~~
 
 export HISTFILE=~/.histfile

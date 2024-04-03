@@ -10,11 +10,19 @@ export NVM_DIR="$HOME/.nvm"
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kevinanielsen/google-cloud-sdk/path.bash.inc' ]; then . '/Users/kevinanielsen/google-cloud-sdk/path.bash.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/kevinanielsen/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/kevinanielsen/google-cloud-sdk/completion.bash.inc'; fi
-
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 . "$HOME/.cargo/env"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# ~~~~~~~~~~~~~~~ Completions ~~~~~~~~~~~~~~~~~~~~
+# enable bash complation
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kevinanielsen/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/kevinanielsen/google-cloud-sdk/completion.bash.inc'; fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
