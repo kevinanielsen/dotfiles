@@ -16,11 +16,15 @@ bind -x '"\C-l":clear'
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
+source ~/.git-completion.bash
+
 # enable bash completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
+else
+  echo "WARNING: .git-completion.bash is missing"
 fi
 
 # ~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~~~~~~
