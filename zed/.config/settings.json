@@ -1,0 +1,22 @@
+{
+  "features": {
+    "copilot": false
+  },
+  "base_keymap": "VSCode",
+  "theme": "Atelier Cave Dark",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "terminal": {
+    "font_family": "FiraCode Nerd Font"
+  },
+  "format_on_save": "on",
+  "formatter": "prettier",
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 100,
+    "trailingComma": "none"
+  },
+  "tab_size": 2
+}

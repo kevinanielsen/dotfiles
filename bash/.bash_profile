@@ -26,3 +26,5 @@ if [ -f '/Users/kevinanielsen/google-cloud-sdk/completion.bash.inc' ]; then . '/
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+source $HOME/.bashrc
