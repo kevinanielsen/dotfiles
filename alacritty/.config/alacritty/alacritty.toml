@@ -13,7 +13,9 @@ decorations = "none"
 x = 8
 y = 2
 
-[[keyboard.bindings]]
-key = "Back"
-mods = "Command"
-chars = "\u0015"
+[keyboard]
+bindings = [
+  { key = "Back", mods = "Command", chars = "\u0015" },
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left", mods = "Alt", chars = "\u001BB" }
+]
