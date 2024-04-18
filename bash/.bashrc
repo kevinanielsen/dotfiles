@@ -22,7 +22,7 @@ esac
 # pnpm end
 
 # keybinds
-#
+
 bind -x '"\C-l":clear'
 
 eval "$(starship init bash)"

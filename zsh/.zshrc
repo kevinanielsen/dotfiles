@@ -1,5 +1,3 @@
-bash
-
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source /Users/kevinanielsen/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
@@ -22,7 +20,6 @@ fi
 zmodload -i zsh/complist
 source /Users/kevinanielsen/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /Users/kevinanielsen/.zsh/history.zsh
-alias ls='ls -G'
 source /Users/kevinanielsen/.zsh/key-bindings.zsh
 source /Users/kevinanielsen/.zsh/aliases.zsh
 
