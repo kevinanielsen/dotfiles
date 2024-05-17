@@ -9,7 +9,6 @@
   "terminal": {
     "font_family": "FiraCode Nerd Font"
   },
-  "format_on_save": "on",
   "formatter": "prettier",
   "prettier": {
     "semi": false,

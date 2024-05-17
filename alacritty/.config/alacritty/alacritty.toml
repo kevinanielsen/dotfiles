@@ -4,7 +4,8 @@ import = ["/Users/kevinanielsen/.config/alacritty/themes/catpuccin-mocha.toml"]
 size = 16
 
 [font.normal]
-family = "FiraCode Nerd Font"
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
 
 [window]
 decorations = "none"
