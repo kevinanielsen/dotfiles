@@ -1,0 +1,30 @@
+# This is Git's per-user configuration file.
+[user]
+	email = kevinanielsen@outlook.com
+	name = Kevin Nielsen
+# Please adapt and uncomment the following lines:
+#	name = Kevin Nielsen
+#	email = keveran@gmail.com
+
+[includeIf "gitdir:~/Fysiofresh/"]
+  [user]
+    email = kan@fairytalesgroup.com
+    name = Kevin Nielsen
+
+[init]
+  defaultBranch = main
+
+[alias]
+  tree = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
+  undo-commit = reset --soft HEAD^
+  redo-commit = commit -C HEAD --amend
+  addremove = add -A
+  co = checkout
+  st = status
+	staash = stash --all
+	bb = !better-branch.sh
+
+[push]
+  default = current
+[rerere]
+	enabled = true
