@@ -23,8 +23,11 @@
   st = status
 	staash = stash --all
 	bb = !better-branch.sh
+	rebase-onto = "!f() { git rebase --onto main $(git merge-base \"$1\" \"$2\") \"$1\"; }; f"
 
 [push]
   default = current
 [rerere]
 	enabled = true
+[maintenance]
+	repo = /Users/kevinanielsen/Fysiofresh/platform
