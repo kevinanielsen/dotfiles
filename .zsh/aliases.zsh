@@ -19,3 +19,5 @@ alias lg="lazygit"
 
 # supabase
 alias sb="supabase"
+
+alias python="python3"
