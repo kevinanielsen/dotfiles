@@ -1,32 +1,43 @@
 {
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "version": "2",
+    "default_open_ai_model": null,
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-4-turbo-preview",
+      "available_models": []
+    }
+  },
   "features": {
     "copilot": false,
     "inline_completion_provider": "supermaven"
   },
   "base_keymap": "VSCode",
-  "theme": "Andromeda",
+  "theme": "Tokyo Night",
   "ui_font_size": 16,
+  "ui_font_family": "Geist Mono",
   "buffer_font_size": 16,
   "format_on_save": "off",
-  // "formatter": "auto",
-  "formatter": {
-    "external": {
-      "command": "node_modules/.bin/prettier",
-      "arguments": [
-        "--stdin-filepath",
-        "{buffer_path}"
-      ]
-    }
-  },
+  "formatter": "prettier",
   "terminal": {
     "font_family": "FiraCode Nerd Font"
   },
-  "prettier": {
-    "semi": true,
-    "tabWidth": 2,
-    "singleQuote": true,
-    "printWidth": 80,
-    "trailingComma": "none"
-  },
-  "tab_size": 2
+  "tab_size": 2,
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "strict"
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    }
+  }
 }
