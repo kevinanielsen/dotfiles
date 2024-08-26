@@ -18,6 +18,6 @@ alias gs="git status"
 alias lg="lazygit"
 
 # supabase
-alias sb="supabase"
-
-alias python="python3"
+alias sb-start="pnpm dlx env-cmd --file supabase/.env.local pnpm dlx supabase@beta start --ignore-health-check"
+alias sb-stop="pnpm dlx env-cmd --file supabase/.env.local pnpm dlx supabase stop"
+alias sb-reset="pnpm dlx env-cmd --file supabase/.env.local pnpm dlx supabase db reset"
