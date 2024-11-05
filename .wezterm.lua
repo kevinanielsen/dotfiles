@@ -1,57 +1,41 @@
-local wezterm = require 'wezterm';
+local wezterm = require("wezterm")
 
 return {
-  font = wezterm.font("JetBrainsMono Nerd Font"),
+	font = wezterm.font("Geist Mono"),
+	color_scheme = "Gruvbox Dark (Gogh)",
 
-  -- Specify fallback fonts
-  font_with_fallback = {
-    "JetBrains Mono Nerd Font",
-    "Nerd Font Symbols",
-  },
+	font_size = 14.0,
+	line_height = 1.2,
 
-  keys = {
-    {
-      key = 'Backspace',
-      mods = 'CMD',
-      action = wezterm.action.SendKey { key = 'u', mods = 'CTRL' },
-    },
-    {
-      key = 'LeftArrow',
-      mods = 'CMD',
-      action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' },
-    },
-    -- Bind CMD+Right Arrow to move to the end of the line
-    {
-      key = 'RightArrow',
-      mods = 'CMD',
-      action = wezterm.action.SendKey { key = 'e', mods = 'CTRL' },
-    },
-    -- Bind Option+Left Arrow to move backward by a word
-    {
-      key = 'LeftArrow',
-      mods = 'OPT',
-      action = wezterm.action.SendKey { key = 'b', mods = 'ALT' },
-    },
-    -- Bind Option+Right Arrow to move forward by a word
-    {
-      key = 'RightArrow',
-      mods = 'OPT',
-      action = wezterm.action.SendKey { key = 'f', mods = 'ALT' },
-    },
-  },
+	window_background_opacity = 0.8,
+	window_decorations = "RESIZE",
+	macos_window_background_blur = 100,
 
-  -- Other optional configurations
-  font_size = 14.0,
-  line_height = 1.2,
-
-  -- Set color scheme
-  color_scheme = "Dracula",
-
-  -- Enable ligatures
-  enable_ime = true,
-  use_fancy_tab_bar = false,
-
-  -- Set window size
-  initial_cols = 100,
-  initial_rows = 30,
+	keys = {
+		{
+			key = "Backspace",
+			mods = "CMD",
+			action = wezterm.action.SendKey({ key = "u", mods = "CTRL" }),
+		},
+		{
+			key = "LeftArrow",
+			mods = "CMD",
+			action = wezterm.action.SendKey({ key = "a", mods = "CTRL" }),
+		},
+		{
+			key = "RightArrow",
+			mods = "CMD",
+			action = wezterm.action.SendKey({ key = "e", mods = "CTRL" }),
+		},
+		{
+			key = "LeftArrow",
+			mods = "OPT",
+			action = wezterm.action.SendKey({ key = "b", mods = "ALT" }),
+		},
+		{
+			key = "RightArrow",
+			mods = "OPT",
+			action = wezterm.action.SendKey({ key = "f", mods = "ALT" }),
+		},
+	},
 }
