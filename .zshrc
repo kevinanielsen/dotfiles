@@ -79,3 +79,8 @@ if [ -f '/Users/kan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/k
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
