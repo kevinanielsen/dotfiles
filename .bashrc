@@ -89,3 +89,4 @@ alias lg="lazygit"
 
 # supabase
 alias sb="supabase"
+. "$HOME/.cargo/env"
