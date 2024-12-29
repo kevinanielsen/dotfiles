@@ -1,6 +1,5 @@
 # This is Git's per-user configuration file.
 [user]
-	email = kevinanielsen@outlook.com
 	name = Kevin Nielsen
 # Please adapt and uncomment the following lines:
 #	name = Kevin Nielsen
@@ -8,8 +7,8 @@
 
 [includeIf "gitdir:~/Fysiofresh/"]
   [user]
-    email = kan@fairytalesgroup.com
     name = Kevin Nielsen
+	email = kevinanielsen@outlook.com
 
 [init]
   defaultBranch = main

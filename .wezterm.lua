@@ -1,15 +1,15 @@
 local wezterm = require("wezterm")
 
 return {
-	font = wezterm.font("Geist Mono"),
-	color_scheme = "Gruvbox Dark (Gogh)",
+	font = wezterm.font("Hack Nerd Font Mono"),
+	color_scheme = "Dracula",
 
 	font_size = 14.0,
 	line_height = 1.2,
 
-	window_background_opacity = 0.8,
+	-- window_background_opacity = 0.8,
+	-- macos_window_background_blur = 100,
 	window_decorations = "RESIZE",
-	macos_window_background_blur = 100,
 
 	keys = {
 		{
